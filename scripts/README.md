@@ -17,7 +17,25 @@ Note this by default sets the host to `0.0.0.0` and port to `8000`. You can chan
 python src/setup_llm_endpoint.py --model microsoft/phi-1_5 --host 127.0.0.1
 ```
 
-Once the endpoint is set up, you can query it by passing in the `llm_api` model in the jsonl file. For example:
-```json
-{"prompt": "This is a test prompt", "model": "llm_api"}
+And should be able to query it on the same machine via cURL the following way:
+
+```bash
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"prompt": "This is a test prompt"}' \
+  http://127.0.0.1:8000/predict
+```
+
+And via Python the following way:
+
+```python
+import requests
+
+url = 'http://127.0.0.1:8000/predict'
+data = {
+    "prompt": "This is a test prompt"
+}
+
+response = requests.post(url, json=data)
+print(response.json())
 ```
