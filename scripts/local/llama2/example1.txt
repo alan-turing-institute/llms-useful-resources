@@ -1,0 +1,3 @@
+*Objectives of Proactive Monitoring of AI Fairness Project*
+
+Our three objectives bring together AI fairness, cybersecurity and human-AI interaction research areas and are informed by current successful secure software development practices: (1) Creating design patterns for fair AI development to support transferring knowledge between different disciplines, producing concrete and actionable outputs, and ensuring effective technical development "by design". (2) Developing code analysis tools that can enable developers to annotate, review and monitor fairness issues in their development flows. (3) Empowering developers to integrate fairness considerations into their AI systems through improving developer knowledge and skills.
