@@ -10,6 +10,7 @@ and
 ```
 python request_to_endpoint.py --input-json llama2_request.json
 ```
+Notice the difference in the inputs for the two types of endpoints.
 - For a realtime endpoint, alternatively, you can use the Azure ML SDK to invoke the endpoint, e.g.
 ```
 python request_to_endpoint_azure_ml.py --input-json realtime_request.json
