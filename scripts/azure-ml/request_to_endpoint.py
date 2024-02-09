@@ -4,7 +4,7 @@ import json
 import argparse
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Request to Llama-2')
+    parser = argparse.ArgumentParser(description='Request to Azure ML endpoint')
     parser.add_argument('--input-json', type=str, help='input json file', default="llama2_request.json")
     
     args = parser.parse_args()
