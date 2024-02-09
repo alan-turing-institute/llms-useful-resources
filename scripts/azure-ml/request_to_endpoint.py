@@ -22,7 +22,7 @@ if __name__ == "__main__":
     with open(args.input_json) as f:
         request_json = json.dumps(json.load(f))
     
-    print(f"Sending request to with data {request_json}\n")
+    print(f"Sending request with data {request_json}\n")
     
     response = requests.post(API_URL, data=request_json, headers=headers)
 

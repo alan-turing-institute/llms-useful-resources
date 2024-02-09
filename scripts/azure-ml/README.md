@@ -26,3 +26,6 @@ Currenlty, it seems you cannot do this for a PAYG endpoint as it's not able to b
 - Python environment setup instructions
 - How to deploy a model in Azure ML
 - Links to endpoint documentation (explain input json format, expected output format, etc.)
+- Make note, for PAYG endpoint:
+    - For completions models, such as Llama-2-7b, use the <target_url>/v1/completions API.
+    - For chat models, such as Llama-2-7b-chat, use the <target_url>/v1/chat/completions API.
