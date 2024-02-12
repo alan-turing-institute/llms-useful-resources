@@ -1,8 +1,23 @@
-# Run Llama-2-7b Models on Mac
+# Build, Quantize, and Run Llama-2-7b Models on Mac using llama.cpp
 
 **Hardware Specs:** Apple M1 Pro - 32GB
 
 The instructions are based on [karankakwani's blog post](https://medium.com/@karankakwani/build-and-run-llama2-llm-locally-a3b393c1570e). The blog post is working fine. Just ensure the model weights and vocab files are downloaded correctly. The only error I got during this process was related to vocab file, which turned out it was corrupted due to a network error.
+
+## Important Note
+
+It is possible to download quantized versions of Llama (and other models) from the Hugging Face hub, eliminating the need for manual quantization. For instance, [The Bloke](https://huggingface.co/TheBloke) account features numerous pre-quantized models. However, it is crucial to consider potential security risks associated with model downloads:
+
+- Models may be susceptible to injection of adversarial behaviors specific to certain prompts.
+- Downloaded models can exhibit malicious behavior.
+
+**Possible Mitigations:**
+
+1. You can encapsulate the development environment within containers to enhance isolation and security.
+2. Another approach can be executing adversarial datasets to observe and evaluate model behavior. Refer to [HF's Read Teaming Page](https://huggingface.co/blog/red-teaming) for additional insights on analyzing model behavior through this approach.
+3. Stay informed about recent and most common AI-model attacks. The [OWASP Top 10](https://owasp.org/www-project-machine-learning-security-top-10/) on Machine Learning Security provides valuable information on current common attack types.
+
+Although these mitigations cannot guarantee full protection, you can minimize the risk and enhance the security posture when working with downloaded quantized models from the Hugging Face hub.
 
 ## llama and llama2.cpp Repositories
 
