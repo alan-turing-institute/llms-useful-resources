@@ -9,6 +9,10 @@ See the examples under the [```local```](./scripts/local/) folder.
 
 See the examples under the [```remote```](./scripts/remote/) folder. 
 
+# Running on Azure ML
+
+See the examples under the [```hpc```](./scripts/azure-ml/) folder. 
+
 # Running on HPC
 
 See the examples under the [```hpc```](./scripts/remote/) folder. 
