@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "azure-ml"
+version = "0.1.0"
+description = ""
+authors = ["rchan <rchan@turing.ac.uk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+azure-identity = "^1.15.0"
+azure-ai-ml = "^1.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
